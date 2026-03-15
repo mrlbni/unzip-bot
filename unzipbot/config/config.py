@@ -1,7 +1,7 @@
 from os.path import join
 
 from .defaults import Defaults
-from env import Env
+from .env import Env
 from psutil import cpu_count
 
 FRAMEWORK_META_DICT = dict(
