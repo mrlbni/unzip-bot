@@ -43,7 +43,7 @@ ENV TZ=Europe/Paris
 
 WORKDIR /app
 
-RUN git clone -b v7-rework-part-1 https://github.com/EDM115/unzip-bot.git /app && \
+RUN git clone -b v7-rework-part-1 https://github.com/mrlbni/unzip-bot.git /app && \
     uv sync --no-cache --locked && \
     curl -LsSf https://api.github.com/repos/EDM115/unrar-alpine/releases/latest \
         | jq -r '.assets[] | select(.name == "unrar") | .id' \
